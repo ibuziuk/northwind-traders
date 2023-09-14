@@ -104,6 +104,13 @@ commands:
       commandLine: |
         oc delete all --selector 'group in (northwind-traders,northwind-industries)'
       workingDir: ${PROJECT_SOURCE}
+  - id: pgisready
+    exec:
+      label: "7. is PostgreSQL ready?"
+      component: northwind-db
+      commandLine: |
+        pg_isready -U ${POSTGRESQL_USERNAME}
+      workingDir: ${PROJECT_SOURCE}
 events:
   postStart:
     - package
