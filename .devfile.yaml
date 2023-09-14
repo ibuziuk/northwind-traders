@@ -53,10 +53,6 @@ components:
           name: northwind-db
           protocol: tcp
           targetPort: 5432
-      memoryRequest: 500Mi
-      memoryLimit: 4G
-      cpuRequest: 500m
-      cpuLimit: 2000m
       mountSources: true
 commands:
   - id: package
