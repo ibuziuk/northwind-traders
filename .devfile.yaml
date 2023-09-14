@@ -53,7 +53,7 @@ components:
       memoryLimit: 4G
       cpuRequest: 500m
       cpuLimit: 2000m
-      mountSources: false
+      mountSources: true
 commands:
   - id: package
     exec:
