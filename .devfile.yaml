@@ -40,6 +40,24 @@ components:
   - name: m2
     volume:
       size: 1G
+  - name: northwind-db
+    container:
+      image: bitnami/postgresql:14.5.0
+      env:
+        - name: POSTGRESQL_USERNAME
+          value: jkube
+        - name: POSTGRESQL_PASSWORD
+          value: pa33word
+      endpoints:
+        - exposure: internal
+          name: northwind-db
+          protocol: tcp
+          targetPort: 5432
+      memoryRequest: 500Mi
+      memoryLimit: 4G
+      cpuRequest: 500m
+      cpuLimit: 2000m
+      mountSources: false
 commands:
   - id: package
     exec:
