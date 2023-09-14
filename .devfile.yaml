@@ -44,6 +44,10 @@ components:
           value: jkube
         - name: POSTGRESQL_PASSWORD
           value: pa33word
+        - name: PGUSER
+          value: jkube
+        - name: PGPASSWORD
+          value: pa33word
       endpoints:
         - exposure: internal
           name: northwind-db
