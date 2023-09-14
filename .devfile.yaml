@@ -20,10 +20,6 @@ components:
           protocol: http
           targetPort: 8081
         - exposure: none
-          name: remote-dev-pg
-          protocol: http
-          targetPort: 5432
-        - exposure: none
           name: remote-dev-mq
           protocol: http
           targetPort: 15672
