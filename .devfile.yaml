@@ -115,6 +115,13 @@ commands:
       commandLine: |
         pg_isready -U ${POSTGRESQL_USERNAME}
       workingDir: ${PROJECT_SOURCE}
+  - id: initdb
+    exec:
+      label: "7. Create DB with test data for development"
+      component: northwind-db
+      commandLine: |
+        psql -d postgres -f init.sql
+      workingDir: ${PROJECT_SOURCE}/dev
 events:
   postStart:
     - package
