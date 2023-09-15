@@ -113,7 +113,7 @@ commands:
       workingDir: ${PROJECT_SOURCE}
   - id: initdb
     exec:
-      label: "7. Create DB with test data for development"
+      label: "8. Create DB with test data for development"
       component: northwind-db
       commandLine: |
         psql -d postgres -f init.sql
