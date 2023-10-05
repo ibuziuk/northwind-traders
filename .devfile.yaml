@@ -2,7 +2,7 @@ schemaVersion: 2.2.0
 metadata:
   generateName: northwind-traders
 variables:
-  postgresqlVersion: 14.5.0
+  postgresqlVersion: 13.12.0
 attributes:
   controller.devfile.io/storage-type: ephemeral
 components:
