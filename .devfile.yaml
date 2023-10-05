@@ -111,7 +111,7 @@ commands:
       label: "7. PostgreSQL version"
       component: northwind-db
       commandLine: |
-        pgql --version
+        psql --version
       workingDir: ${PROJECT_SOURCE}
   - id: initdb
     exec:
