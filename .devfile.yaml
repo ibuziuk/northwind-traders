@@ -31,7 +31,7 @@ components:
           targetPort: 8080
           path: /
       memoryRequest: 500Mi
-      memoryLimit: 6G
+      memoryLimit: 4G
       cpuRequest: 1000m
       cpuLimit: 4000m
       mountSources: true
