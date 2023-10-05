@@ -1,4 +1,4 @@
-[![Contribute](https://www.eclipse.org/che/contribute.svg)](https://workspaces.openshift.com#https://github.com/redhat-developer-demos/northwind-traders/)
+[![Contribute](https://www.eclipse.org/che/contribute.svg)](https://workspaces.openshift.com#https://github.com/ibuziuk/redhat-developer-demos/northwind-traders/)
 
 Northwind Traders
 =================
