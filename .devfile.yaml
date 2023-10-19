@@ -27,7 +27,7 @@ components:
           targetPort: 15672
         - exposure: public
           name: inventory
-          protocol: http
+          protocol: https
           targetPort: 8080
           path: /
       memoryRequest: 500Mi
